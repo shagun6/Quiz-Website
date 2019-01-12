@@ -1,0 +1,187 @@
+<html>
+<head>
+<title></title>
+<link href="csss.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+
+function check(){
+var question1=document.quiz.question1.value;
+
+var question2=document.quiz.question2.value;
+
+var question3=document.quiz.question3.value;
+
+var question4=document.quiz.question4.value;
+
+var question5=document.quiz.question5.value;
+
+var question6=document.quiz.question6.value;
+
+var question7=document.quiz.question7.value;
+var correct=0;
+if(question1=="All of the above"){
+correct++;
+}
+if(question2=="All the above"){
+correct++;
+}if(question3=="MyClass (constant MyClass &arg)"){
+correct++;
+}if(question4=="Only 1 and 3"){
+correct++;
+}if(question5=="10 10"){
+correct++;
+}if(question6=="All of above"){
+correct++;
+}if(question7=="It is passed as a hidden argument to all non-static function calls"){
+correct++;
+}
+
+var messages=["well Done!!","Just okay" ,"Really need improvement"];
+var range;
+if(correct>5)
+{
+range=0;
+}
+if(correct>2&&correct<6)
+{
+range=1;
+}
+if(correct<3)
+{
+range=2;
+}
+document.getElementById("after_submit").style.visibility="visible";
+
+
+document.getElementById("messages").innerHTML=messages[range];
+
+document.getElementById("number_correct").innerHTML="You got " + correct +" correct answer ";
+document.getElementById("button1").style.visibility="visible";
+}
+function erase(){
+alert("You choose to retake the quiz");
+document.getElementById("after_submit").style.visibility="hidden";
+}
+
+
+</script>
+</head>
+<body>
+<ol>
+<form name="quiz" id="quiz">
+<li>
+Which of the followings is/are automatically added to every class, if we do not write our own.</li>
+<input type="radio" name="question1" value="Copy Constructor">Copy Constructor<br>
+<input type="radio" name="question1" value="Assignment Operator">Assignment Operator<br>
+<input type="radio" name="question1" value="A constructor without any parameter">A constructor without any parameter<br>
+<input type="radio" name="question1" value="All of the above">All of the above
+
+<li>
+	
+When a copy constructor may be called?</li>
+<input type="radio" name="question2" value="When an object of the class is returned by value.">When an object of the class is returned by value.<br>
+<input type="radio" name="question2" value="When an object of the class is passed (to a function) by value as an argument.">When an object of the class is passed (to a function) by value as an argument.<br>
+<input type="radio" name="question2" value="When compiler generates a temporary object.">When compiler generates a temporary object.<br>
+<input type="radio" name="question2" value="All the above">All the above
+
+
+<li>	
+What is the right way to declare a copy constructor of a class if the name of the class is MyClass?</li>
+<input type="radio" name="question3" value="MyClass (constant MyClass *arg)">MyClass (constant MyClass *arg)<br>
+<input type="radio" name="question3" value="MyClass (constant MyClass &arg)">MyClass (constant MyClass &arg)<br>
+<input type="radio" name="question3" value="MyClass (MyClass arg)">MyClass (MyClass arg)<br>
+<input type="radio" name="question3" value="MyClass (MyClass *arg)">MyClass (MyClass *arg)
+
+
+
+
+<li>
+Which of the following is true about constructors. 1) They cannot be virtual. 2) They cannot be private. 3) They are automatically called by new operator.</li>
+<input type="radio" name="question4" value="All 1, 2, and 3">All 1, 2, and 3<br>
+<input type="radio" name="question4" value=" Only 1 and 3"> Only 1 and 3<br>
+<input type="radio" name="question4" value=" Only 1 and 2"> Only 1 and 2<br>
+<input type="radio" name="question4" value=" Only 2 and 3"> Only 2 and 3
+
+<li>
+#include<iostream>
+using namespace std;
+ 
+class X 
+{
+public:
+    int x;
+};
+ 
+int main()
+{
+    X a = {10};
+    X b = a;
+    cout << a.x << " " << b.x;
+    return 0;
+}</li>
+<input type="radio" name="question5" value="Compiler Error">Compiler Error<br>
+<input type="radio" name="question5" value="10 followed by Garbage Value">10 followed by Garbage Value<br>
+<input type="radio" name="question5" value="10 10">10 10 <br>
+<input type="radio" name="question5" value="10 0">10 0
+
+<li>
+#include<iostream>
+using namespace std;
+class A
+{
+public:
+     A(){ cout <<"1";}
+     A(const A &obj){ cout <<"2";}
+};
+ 
+class B: virtual A
+{
+public:
+    B(){cout <<"3";}
+    B(const B & obj){cout<<"4";}
+};
+ 
+class C: virtual A
+{
+public:
+   C(){cout<<"5";}
+   C(const C & obj){cout <<"6";}
+};
+ 
+class D:B,C
+{
+public:
+    D(){cout<<"7";}
+    D(const D & obj){cout <<"8";}
+};
+ 
+int main()
+{
+   D d1;
+   D d(d1);
+}.
+Which of the below is not printed? 
+</li>
+<input type="radio" name="question6" value="2">2<br>
+<input type="radio" name="question6" value="4">4<br>
+<input type="radio" name="question6" value="6">6<br>
+<input type="radio" name="question6" value="All of above">All of above
+
+
+<li>
+Which of the following is true about this pointer?</li>
+<input type="radio" name="question7" value="It is passed as a hidden argument to all function calls">It is passed as a hidden argument to all function calls<br>
+<input type="radio" name="question7" value="It is passed as a hidden argument to all non-static function calls">It is passed as a hidden argument to all non-static function calls<br>
+<input type="radio" name="question7" value="It is passed as a hidden argument to all static functions">It is passed as a hidden argument to all static functions<br>
+<input type="radio" name="question7" value="None of above">None of above<br><br><br>
+
+	<input id="button" type="button" value="i m done" onclick="check();">
+<input id="button1" type="reset" value="Restart quiz" onclick="erase();">
+</ol>
+</form>
+<div id="after_submit">
+<p id="messages"></p>
+<p id="number_correct"></p>
+</div>
+
+</body>
