@@ -1,0 +1,38 @@
+body{
+background-color:"yellow";
+}
+#button{
+background-color:green;
+padding:10px 20px 10px 5px;
+border-radius:10px;
+font-size:35px;
+}
+#button:hover{
+background-color:white;
+color:black;
+cursor:pointer;
+}
+#after_submit{
+visibility:hidden;
+background-color:red;
+font-size:30px;
+color:yellow;
+padding:10px 20px 10px 20px;
+border-radius:10px;
+margin-left:20px;
+width:600px;
+float:left;
+}
+#button1{
+visibility:hidden;
+background-color:green;
+padding:10px 20px 10px 5px;
+border-radius:10px;
+font-size:35px;
+}
+#button1:hover{
+background-color:white;
+color:black;
+cursor:pointer;
+}
+
