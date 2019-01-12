@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+href="stylesheet.css"></head>
+<body>
+	<marquee><h1>WELCOME TO QUIZ PANTHER</h1></marquee>
+<div class="sidenav">
+				<div class="button">
+					<a href="file:///C:/Users/Shagun%20Aggarwal/Desktop/homepage/aa.html">Data Structure</a>
+				</div><br>
+
+				<div class="button">
+					<a href="file:///C:/Users/Shagun%20Aggarwal/Desktop/homepage/webtech.html">Web Tech</a>
+				</div><br>
+<div class="button">
+	<a href="file:///C:/Users/Shagun%20Aggarwal/Desktop/homepage/op.html">Operating System</a>
+</div><br>
+<div class="button">
+	<a href="file:///C:/Users/Shagun%20Aggarwal/Desktop/homepage/prog.html
+">Programming</a>
+</div><br>
+	<div class="button">
+	<a href="file:///C:/Users/Shagun%20Aggarwal/Desktop/homepage/python.html
+">Python</a>
+</div><br>
+	<div class="button">
+	<a href="file:///C:/Users/Shagun%20Aggarwal/Desktop/homepage/va.html">Data Structure Tutorials</a>
+</div><br>
+<div class="button">
+	<a href="file:///C:/Users/Shagun%20Aggarwal/Desktop/homepage/vs.html">Web Tech Tutorials</a>
+</div><br>
+<div class="button">
+	<a href="file:///C:/Users/Shagun%20Aggarwal/Desktop/homepage/s.html">Operating System Tutorials</a>
+</div><br>
+
+
+
+</body>
+</head>
+<html>
