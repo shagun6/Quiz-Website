@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>QUIZ WEBSITE</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+		<div class="row"> 
+			</div>
+			<ul class="main-nav">
+				<li class="active"><a href=""> HOME</a></li>
+				
+				<li><a href="#"> CONTACT US</a></li>
+				<li><a href="#"> ABOUT</a></li>
+				<li><a href="#"> FAQ</a></li>
+			</ul> 
+			<img src="o.gif"</img>
+			<div class="hero">
+				<h1>
+					are u ready?
+				</h1>
+				<div class="button">
+					<a href="file:///C:/Users/Shagun%20Aggarwal/Desktop/homepage/css.html" class="btn btn-one">start</a>
+				</div>
+			</div>
+	</header>
+</body>
