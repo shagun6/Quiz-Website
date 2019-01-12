@@ -1,0 +1,62 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+href="style2.css"></head>
+<body>
+<p><a href="#home">Home</a></p><br>
+<p><a href="#Simple">Introduction to search algorithums</a></p><br>
+<p><a href="#overview">Introduction to Sorting</a></p><br>
+<p><a href="#sort">Introduction to Linked Lists</a></p>
+<h1 id="home">Home</h1>
+<p>Data Structure is a way of collecting and organising data in such a way that we can perform operations on these data in an effective way. Data Structures is about rendering data elements in terms of some relationship, for better organization and storage. For example, we have some data which has, player's name "Virat" and age 26. Here "Virat" is of String data type and 26 is of integer data type.
+
+We can organize this data as a record like Player record, which will have both player's name and age in it. Now we can collect and store player's records in a file or database as a data structure. For example: "Dhoni" 30, "Gambhir" 31, "Sehwag" 33
+
+If you are aware of Object Oriented programming concepts, then a class also does the same thing, it collects different type of data under one single entity. The only difference being, data structures provides for techniques to access and manipulate data efficiently.
+
+In simple language, Data Structures are structures programmed to store ordered data, so that various operations can be performed on it easily. It represents the knowledge of data to be organized in memory. It should be designed and implemented in such a way that it reduces the complexity and increases the efficiency.
+</p>
+<h1 id="Simple">Introduction to search algorithums</h1>
+<p>Not even a single day pass, when we do not have to search for something in our day to day life, car keys, books, pen, mobile charger and what not. Same is the life of a computer, there is so much data stored in it, that whenever a user asks for some data, computer has to search it's memory to look for the data and make it available to the user. And the computer has it's own techniques to search through it's memory fast, which you can learn more about in our Operating System tutorial series.
+
+What if you have to write a program to search a given number in an array? How will you do it?
+
+Well, to search an element in a given array, there are two popular algorithms available:<br>
+
+Linear Search<br>
+Binary Search<br>
+Linear search is a very basic and simple search algorithm. In Linear search, we search an element or value in a given array by traversing the array from the starting, till the desired element or value is found.
+
+It compares the element to be searched with all the elements present in the array and when the element is matched successfully, it returns the index of the element in the array, else it return -1.
+
+Linear Search is applied on unsorted or unordered lists, when there are fewer elements in a list.<br>
+In binary search,the list is divided into half and then the element to be searched is compared with the middle element.</p>
+<h1 id="overview">Introduction to Sorting</h1>
+<p>Sorting is nothing but arranging the data in ascending or descending order. The term sorting came into picture, as humans realised the importance of searching quickly.
+
+There are so many things in our real life that we need to search for, like a particular record in database, roll numbers in merit list, a particular telephone number in telephone directory, a particular page in a book etc. All this would have been a mess if the data was kept unordered and unsorted, but fortunately the concept of sorting came into existence, making it easier for everyone to arrange data in an order, hence making it easier to search.
+
+Sorting arranges data in a sequence which makes searching easier.
+There are many different techniques available for sorting, differentiated by their efficiency and space requirements. Following are some sorting techniques:<br>
+
+Bubble Sort<br>
+Insertion Sort<br>
+Selection Sort<br>
+Quick Sort<br>
+Merge Sort<br>
+Heap Sort</p>
+<h1 id="sort">Introduction to Linked Lists</h1>
+<p>Linked List is a very commonly used linear data structure which consists of group of nodes in a sequence.
+
+Each node holds its own data and the address of the next node hence forming a chain like structure.
+
+Linked Lists are used to create trees and graphs.
+There are 3 different implementations of Linked List available, they are:<br>
+
+Singly Linked List<br>
+Doubly Linked List<br>
+Circular Linked List
+
+</p>
+</body>
+</html>
