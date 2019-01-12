@@ -1,0 +1,139 @@
+<html>
+<head>
+<title></title>
+<link href="csss.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+
+function check(){
+var question1=document.quiz.question1.value;
+
+var question2=document.quiz.question2.value;
+
+var question3=document.quiz.question3.value;
+
+var question4=document.quiz.question4.value;
+
+var question5=document.quiz.question5.value;
+
+var question6=document.quiz.question6.value;
+
+var question7=document.quiz.question7.value;
+var correct=0;
+if(question1=="Operation code"){
+correct++;
+}
+if(question2=="1"){
+correct++;
+}if(question3=="linking loader"){
+correct++;
+}if(question4=="a program in execution"){
+correct++;
+}if(question5=="Utility program"){
+correct++;
+}if(question6=="allows processes to synchronize activity"){
+correct++;
+}if(question7=="becoming more common"){
+correct++;
+}
+
+var messages=["well Done!!","Just okay" ,"Really need improvement"];
+var range;
+if(correct>5)
+{
+range=0;
+}
+if(correct>2&&correct<6)
+{
+range=1;
+}
+if(correct<3)
+{
+range=2;
+}
+document.getElementById("after_submit").style.visibility="visible";
+
+
+document.getElementById("messages").innerHTML=messages[range];
+
+document.getElementById("number_correct").innerHTML="You got " + correct +" correct answer ";
+document.getElementById("button1").style.visibility="visible";
+}
+function erase(){
+alert("You choose to retake the quiz");
+document.getElementById("after_submit").style.visibility="hidden";
+}
+
+
+</script>
+</head>
+<body>
+<ol>
+<li>
+The part of machine level instruction, which tells the central processor what has to be done, is</li>
+<form name="quiz" id="quiz">
+<input type="radio" name="question1" value="Operation code">Operation code<br>
+<input type="radio" name="question1" value="Address">Address<br>
+<input type="radio" name="question1" value="Locator">Locator<br>
+<input type="radio" name="question1" value="None of the above">None of the above
+
+<li>
+	
+To avoid the race condition, the number of processes that may be simultaneously inside their critical section is</li>
+<input type="radio" name="question2" value="8">8<br>
+<input type="radio" name="question2" value="1">1<br>
+<input type="radio" name="question2" value="16">16<br>
+<input type="radio" name="question2" value="0">0
+
+
+<li>
+ 
+  	
+A system program that combines the separately compiled modules of a program into a form suitable for execution</li>
+<input type="radio" name="question3" value="assembler">assembler<br>
+<input type="radio" name="question3" value="linking loader">linking loader<br>
+<input type="radio" name="question3" value="cross compiler">cross compiler<br>
+<input type="radio" name="question3" value="None of the above">None of the above
+
+
+
+
+<li>
+ Process is</li>
+<input type="radio" name="question4" value="program in High level language kept on disk">program in High level language kept on disk<br>
+<input type="radio" name="question4" value="contents of main memory">contents of main memory<br>
+<input type="radio" name="question4" value="a program in execution">a program in execution<br>
+<input type="radio" name="question4" value="a job in secondary memory">a job in secondary memory
+
+<li>
+	
+Which of the following systems software does the job of merging the records from two files into one?</li>
+<input type="radio" name="question5" value="Security software">Security software<br>
+<input type="radio" name="question5" value="Utility program">Utility program<br>
+<input type="radio" name="question5" value="Networking software">Networking software<br>
+<input type="radio" name="question5" value="Documentation system">Documentation system
+
+<li>
+ 	
+Interprocess communication</li>
+<input type="radio" name="question6" value="is required for all processes">is required for all processes<br>
+<input type="radio" name="question6" value="is usually done via disk drives">is usually done via disk drives<br>
+<input type="radio" name="question6" value="is never necessary">is never necessary<br>
+<input type="radio" name="question6" value="allows processes to synchronize activity">allows processes to synchronize activity
+
+
+<li>
+User-Friendly Systems are:</li>
+<input type="radio" name="question7" value="required for object-oriented programming">required for object-oriented programming<br>
+<input type="radio" name="question7" value="easy to develop">easy to develop<br>
+<input type="radio" name="question7" value="common among traditional mainframe operating systems">common among traditional mainframe operating systems<br>
+<input type="radio" name="question7" value="becoming more common">becoming more common<br><br><br>
+
+	<input id="button" type="button" value="i m done" onclick="check();">
+<input id="button1" type="reset" value="Restart quiz" onclick="erase();">
+</ol>
+<div id="after_submit">
+<p id="messages"></p>
+<p id="number_correct"></p>
+</div>
+
+</body>
